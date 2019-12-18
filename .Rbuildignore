@@ -1,3 +1,4 @@
 ^fsDirDeleteError\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^appveyor\.yml$
