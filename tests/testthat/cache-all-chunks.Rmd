@@ -22,3 +22,7 @@ plot(1:10)
 ```{r plot-three, autodep=TRUE}
 plot(1:10)
 ```
+
+```{r a-session-info-chunk-inserted-by-workflowr}
+sessionInfo()
+```
