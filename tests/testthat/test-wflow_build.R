@@ -48,7 +48,7 @@ test_that("wflow_build deletes cache when delete_cache = TRUE", {
   #   "html",
   #   "session-info-chunk-inserted-by-workflowr_dcb4b1f4c87754270381f62dd2d3f529.RData"
   # )
-  problem <- "../../../../../Users/appveyor/AppData/Local/Temp/1/RtmpqEGRGL/working_dir/RtmpQ1sD7N/test-wflow_build-870e1666/analysis/cache_cache/html/session-info-chunk-inserted-by-workflowr_dcb4b1f4c87754270381f62dd2d3f529.RData"
+  problem <- fs::path(dir_cache, "html/session-info-chunk-inserted-by-workflowr_dcb4b1f4c87754270381f62dd2d3f529.RData")
   expect_true(fs::file_exists(problem))
   dir_cache_mod_pre <- fs::file_info(dir_cache)$modification_time
   expect_message(
