@@ -11,8 +11,11 @@ Description: Deletes a knitr cache directory.
 License: CC0
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Imports:
     fs
-Suggests: 
+Suggests:
+    glue,
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 2.1.0),
+    workflowr
