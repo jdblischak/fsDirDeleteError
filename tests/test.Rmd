@@ -19,6 +19,6 @@ plot(1:10)
 plot(1:10)
 ```
 
-```{r a-really-really-long-chunk-name}
+```{r a-really-really-long-chunk-name-like-really-really-long-almost-too-long-you-could-say}
 sessionInfo()
 ```
