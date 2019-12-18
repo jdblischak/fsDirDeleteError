@@ -1,5 +1,5 @@
 Package: fsDirDeleteError
-Title: What the Package Does (One Line, Title Case)
+Title: Attempt to reproduce AppVeyor-specific fs bug
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Deletes a knitr cache directory.
 License: CC0
 Encoding: UTF-8
 LazyData: true
