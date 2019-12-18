@@ -54,7 +54,7 @@ test_that("wflow_build deletes cache when delete_cache = TRUE", {
                                    regexp = "session-info")
   expect_equal(length(session_info_files), 6)
   expect_true(fs::dir_exists(dir_cache))
-  problem <- fs::path(dir_cache, "html/session-info-chunk-inserted-by-workflowr_dcb4b1f4c87754270381f62dd2d3f529.RData")
+  problem <- fs::path(dir_cache, "html/session-info-chunk-inserted-by-workflowr_dcb4b1f4c87754270381f62dd2d3f529.rdb")
   expect_true(fs::file_exists(problem))
   dir_cache_mod_pre <- fs::file_info(dir_cache)$modification_time
   expect_message(
