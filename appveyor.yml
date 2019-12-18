@@ -10,8 +10,18 @@ init:
 install:
   ps: Bootstrap
 
+# Install pandoc
+before_test:
+  - ps: >-
+      if (-Not (Test-Path "C:\Program Files\Pandoc\")) {
+        cinst --no-progress pandoc
+      }
+  - ps: $env:Path += ";C:\Program Files\Pandoc\"
+  - pandoc -v
+
 cache:
   - C:\RLibrary
+  - C:\Program Files\Pandoc\
 
 environment:
   NOT_CRAN: true
